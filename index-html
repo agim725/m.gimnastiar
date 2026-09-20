@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Pribadi Muhamad Gimnastiar</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Background gradient animasi */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+      background-size: 400% 400%;
+      animation: gradientBG 12s ease infinite;
+      color: #333;
+    }
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      text-align: center;
+      padding: 30px;
+      color: white;
+    }
+    header img {
+      max-width: 150px;
+      border-radius: 50%;
+      border: 3px solid white;
+    }
+
+    nav {
+      background: rgba(0,0,0,0.6);
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .card {
+      background: rgba(255,255,255,0.9);
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .social-icons img {
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
+
+    footer {
+      background: rgba(0,0,0,0.7);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    /* Responsif untuk HP */
+    @media (max-width: 768px) {
+      body {
+        font-size: 14px;
+        padding: 10px;
+      }
+      header img {
+        max-width: 100px;
+      }
+      .social-icons img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="foto saya.jpeg" alt="Foto Profil">
+    <h1>Web Pribadi Muhamad Gimnastiar</h1>
+    <p>Mahasiswa | Web Developer | Content Creator | Fotografer</p>
+  </header>
+
+  <!-- Navigasi -->
+  <nav>
+    <a href="#tentang">Tentang Saya</a>
+    <a href="#skill">Skill</a>
+    <a href="#sekolah">Tahun Sekolah</a>
+    <a href="#kontak">Kontak</a>
+  </nav>
+
+  <!-- Tentang Saya -->
+  <section id="tentang">
+    <div class="card">
+      <h2>Tentang Saya</h2>
+      <p>Halo, saya Muhamad. Saya tertarik pada dunia teknologi, pengembangan web, pembuatan konten digital, dan Fotografer.</p>
+    </div>
+  </section>
+
+  <!-- Skill -->
+  <section id="skill">
+    <div class="card">
+      <h2>Skill</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Microsoft world dan excel</li>
+        <li>Fotografer</li>
+        <li>Programmer</li>
+        <li>React & Node.js</li>
+        <li>UI/UX Design</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Tahun Sekolah -->
+  <section id="sekolah">
+    <div class="card">
+      <h2>Tahun Sekolah</h2>
+      <ul>
+        <li>2012 - 2018: SD Negeri BantarGebang 1</li>
+        <li>2018 - 2021: SMP Negeri 49</li>
+        <li>2021 - 2024: SMK  Karya Bahana Mandiri 1</li>
+        <li>2024 - Sekarang: Universitas Bung Karno</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak">
+    <div class="card">
+      <h2>Kontak</h2>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/muhamad-gimnastiar-04ab45436/ target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+        <a href="https://github.com/agim725" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub"></a>
+        <a href="mailto:nastiaragim725@gmail.com" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail"></a>
+        <a href="https://instagram.com/nastiaragim725" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+        <a href="https://wa.me/6287789374223" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 Muhamad Gimnastiar. Semua Hak Dilindungi.</p>
+  </footer>
+</body>
+</html>
